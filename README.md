@@ -10,5 +10,7 @@ Realistic Frequency Missing Pattern: Large gaps in specific sections where posit
 The simulated data is stored in three folders—single, multiple, and realistic_frequency—each containing CSV files that reflect the respective missing pattern. The notebook also generates and saves trajectory plots for each missing pattern in a folder named "plots."
 
 
+The next step is to extract all CSV files containing "perfect" trajectories, meaning those without missing values in the attributes "longitude," "latitude," and "draught." It’s important to emphasize that having no missing values for "longitude" and "latitude" alone does not guarantee a perfect trajectory without positional gaps. Missing data gaps can still occur due to prolonged AIS communication failures. Additionally, it's crucial to ensure that the extracted CSV files have no missing values for "draught." This is because, during the sea depth grid construction in the data preparation stage, missing sea depth grid cells are filled with the maximum draught values from neighboring vessel samples around the centroid of the grid cell. This ensures the depth map remains complete and consistent for the subsequent graph construction stage.
+
 
 
