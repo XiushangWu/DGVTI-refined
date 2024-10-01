@@ -4,6 +4,8 @@ This project focuses on refining the imputation algorithm for missing positional
 
 The Jupyter notebook, "Missing Scenarios Mimic.ipynb," utilizes 25 CSV files stored in the folder: "C:\Users\HU84VR\Downloads\AIS Project1\Test Trajectories for AIS 20240831\25 Chosen Perfect Trajectory Data". These files are used to simulate missing data by removing certain instances, mimicking three missing data patterns described in the paper "DGVTI: Depth-Map Enhanced Graph Imputation for Vessel Trajectories":
 
+To enable other users to directly apply the Missing Scenarios Mimic.ipynb on the server, I have converted it into a Python script titled Extract data with 3 missing patterns.py, with several updates. In this script, the parameters for the length of single gaps in the "single missing gap" scenario, the length and number of trajectories in the "multiple missing gaps" scenario, and the length and number of large/small trajectories in the "realistic frequency" missing gaps scenario are listed at the beginning. These parameters can be easily modified by other users to customize the missing patterns and evaluate the performance of the enhanced DGVTI algorithm under various trajectory positional report missing scenarios.
+
 Single Missing Pattern: A single large gap within the trajectory.
 Multiple Missing Pattern: Several mid-sized gaps dividing the trajectory into multiple disconnected parts.
 Realistic Frequency Missing Pattern: Large gaps in specific sections where positional reports are completely missing, alongside frequent small gaps that indicate brief, minor interruptions in otherwise frequent reports.
