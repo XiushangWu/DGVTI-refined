@@ -4,16 +4,17 @@ This project focuses on refining the imputation algorithm for missing positional
 
 The Jupyter notebook, "Missing Scenarios Mimic.ipynb," utilizes 25 CSV files stored in the folder: "C:\Users\HU84VR\Downloads\AIS Project1\Test Trajectories for AIS 20240831\25 Chosen Perfect Trajectory Data". These files are used to simulate missing data by removing certain instances, mimicking three missing data patterns described in the paper "DGVTI: Depth-Map Enhanced Graph Imputation for Vessel Trajectories":
 
-**single_random_generator.py**, this script is used to read and create one single large missing gap within the data from the 25 CSV files stored in the folder: "C:\Users\HU84VR\Downloads\AIS Project1\Test Trajectories for AIS 20240831\25 Chosen Perfect Trajectory Data", the processed data with one large single missing gap is used to check the performance of DGVTI algorithm performance under scenario where the trajectory exhibit one single lager missing gap pattern.
+The **single_random_generator.py** script reads data from 25 CSV files stored in the folder: "C:\Users\HU84VR\Downloads\AIS Project1\Test Trajectories for AIS 20240831\25 Chosen Perfect Trajectory Data". It creates a single large missing gap in the data to evaluate the performance of the DGVTI algorithm in scenarios where the trajectory contains one significant gap.
 
-**multiple_random_generator.py**, this script is used to read and create multiple midzise missing gaps within the data from the 25 CSV files stored in the folder: "C:\Users\HU84VR\Downloads\AIS Project1\Test Trajectories for AIS 20240831\25 Chosen Perfect Trajectory Data", the processed data with multiple midzise missing gaps is used to check the performance of DGVTI algorithm performance under scenario where the trajectory exhibit one multiple midzise missing gaps pattern.
+The **multiple_random_generator.py** script processes the same 25 CSV files and introduces multiple midsize missing gaps to test the DGVTI algorithm's performance under conditions where the trajectory features several gaps of moderate size.
 
-**realistic_frequency_random_generator**.py, this script is used to read and create realistic frequency missing gaps within the data from the 25 CSV files stored in the folder: "C:\Users\HU84VR\Downloads\AIS Project1\Test Trajectories for AIS 20240831\25 Chosen Perfect Trajectory Data", data the processed data with realistic frequency missing gaps is used to check the performance of DGVTI algorithm performance under scenario where the trajectory exhibit realistic frequency missing gaps pattern. This realistic frequency of missing data is derived based on the transmission rates expected from Class A vessels under different conditions of movement. The paper describes how these vessels transmit position reports at varying frequencies based on factors like speed, course changes, and whether the vessel is stationary or moving. 
-For instance: 
-When the vessel is anchored or moored, the transmission frequency is every 3 minutes.
-For vessels moving at speeds between 0 and 14 knots, the reports are transmitted every 10 seconds, but when changing course, it increases to every 3.33 seconds.
-At higher speeds (above 23 knots), the frequency of transmission can be as short as 2 seconds.
-By replicating these transmission rates, the study models missing data to reflect realistic conditions where expected reports may be absent. This is crucial for evaluating how the proposed imputation method handles incomplete data compared to other methods
+The **realistic_frequency_random_generator.py** script generates missing gaps based on realistic transmission frequencies, also using the same 25 CSV files. These gaps simulate realistic conditions derived from the expected transmission rates of Class A vessels under various movement scenarios. 
+
+**For example:**\\
+vessels anchored or moored transmit position reports every 3 minutes, \\
+while those traveling at 0-14 knots transmit every 10 seconds, with increased frequency (every 3.33 seconds) during course changes.\\
+Vessels exceeding 23 knots may transmit as frequently as every 2 seconds.\\
+By replicating these transmission patterns, the study simulates realistic data gaps, allowing for the evaluation of the DGVTI algorithm’s ability to handle incomplete data. This approach is crucial for assessing the algorithm’s performance in comparison to other imputation methods.
 
 
 
