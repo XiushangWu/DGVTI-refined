@@ -10,11 +10,7 @@ The **multiple_random_generator.py** script processes the same 25 CSV files and 
 
 The **realistic_frequency_random_generator.py** script generates missing gaps based on realistic transmission frequencies, also using the same 25 CSV files. These gaps simulate realistic conditions derived from the expected transmission rates of Class A vessels under various movement scenarios. 
 
-**For example:**\\
-vessels anchored or moored transmit position reports every 3 minutes, \\
-while those traveling at 0-14 knots transmit every 10 seconds, with increased frequency (every 3.33 seconds) during course changes.\\
-Vessels exceeding 23 knots may transmit as frequently as every 2 seconds.\\
-By replicating these transmission patterns, the study simulates realistic data gaps, allowing for the evaluation of the DGVTI algorithm’s ability to handle incomplete data. This approach is crucial for assessing the algorithm’s performance in comparison to other imputation methods.
+**For example:** vessels anchored or moored transmit position reports every 3 minutes, while those traveling at 0-14 knots transmit every 10 seconds, with increased frequency (every 3.33 seconds) during course changes.Vessels exceeding 23 knots may transmit as frequently as every 2 seconds.By replicating these transmission patterns, the study simulates realistic data gaps, allowing for the evaluation of the DGVTI algorithm’s ability to handle incomplete data. This approach is crucial for assessing the algorithm’s performance in comparison to other imputation methods.
 
 
 
