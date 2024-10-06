@@ -15,7 +15,14 @@ NUM_GAPS = random.randint(2, 50)
 
 If the total length of the trajectory is insufficient to create a these gaps, the minimum threshold is repeatedly reduced by half (multiplied by 0.5) until the generated gap length, determined by **#gap_length = np.random.uniform(current_gap_threshold, segment_end - gap_start_location)**, fits within the available trajectory length. This approach ensures that all gap can be created without overlaping each other even for shorter trajectories.
 
-The **realistic_frequency_random_generator.py** script generates missing gaps based on realistic transmission frequencies, also using the same 25 CSV files. These gaps simulate realistic conditions derived from the expected transmission rates of Class A vessels under various movement scenarios. 
+The **realistic_frequency_random_generator.py** script generates missing gaps based on realistic transmission frequencies, using the same 25 CSV files. These gaps simulate conditions that reflect the expected transmission rates of Class A vessels under various movement scenarios. This script combines both the single large gap and multiple smaller gaps, creating a more complex and realistic pattern of missing data. This approach is designed to mimic real-world scenarios where trajectories may experience both significant and minor gaps, offering a more comprehensive evaluation of the DGVTI algorithm’s performance under varied missing data conditions.
+
+
+
+
+
+
+
 
 **For example:** vessels anchored or moored transmit position reports every 3 minutes, while those traveling at 0-14 knots transmit every 10 seconds, with increased frequency (every 3.33 seconds) during course changes.Vessels exceeding 23 knots may transmit as frequently as every 2 seconds.By replicating these transmission patterns, the study simulates realistic data gaps, allowing for the evaluation of the DGVTI algorithm’s ability to handle incomplete data. This approach is crucial for assessing the algorithm’s performance in comparison to other imputation methods.
 
