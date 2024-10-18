@@ -1,0 +1,721 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\WINDOWS\system32> cd ..
+PS C:\WINDOWS> cd ..
+PS C:\> cd Users
+PS C:\Users> cd HU84VR
+PS C:\Users\HU84VR> cd .\Downloads\
+PS C:\Users\HU84VR\Downloads> cd 'AIS Project1'
+PS C:\Users\HU84VR\Downloads\AIS Project1> cd '.\Test Trajectories for AIS 20240831\'
+PS C:\Users\HU84VR\Downloads\AIS Project1\Test Trajectories for AIS 20240831> ls
+
+
+    Directory: C:\Users\HU84VR\Downloads\AIS Project1\Test Trajectories for AIS 20240831
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        25-09-2024     15:53                25 chosen perfect trajectory data
+d-----        24-09-2024     15:15                25 chosen perfect trajectory plots
+d-----        15-10-2024     09:23                25_chosen_perfect_trajectory_data_filtered
+d-----        15-10-2024     15:56                data_combined
+d-----        15-10-2024     15:56                data_multiple
+d-----        18-10-2024     21:55                data_realistic_frequency
+d-----        15-10-2024     15:56                data_single
+d-----        11-10-2024     14:50                geojson data_25_trajectories
+d-----        18-10-2024     21:54                plots
+d-----        11-10-2024     09:48                txt data_25_trajectories
+-a----        15-10-2024     07:39           9003 combined_random_generator_parsed.py
+-a----        10-10-2024     12:11           2888 CSV to GeoJson.py
+-a----        15-10-2024     09:33           5903 CSV_to_txt.py
+-a----        01-10-2024     10:19          12920 Mssing scenarios mimic.ipynb
+-a----        15-10-2024     07:54           8752 multiple_random_generator_parsed.py
+-a----        15-10-2024     07:53           1551 Range query for depth map.py
+-a----        05-10-2024     18:01           2633 README.txt
+-a----        15-10-2024     08:55           8535 single_random_generator_parsed.py
+
+PS C:\Users\HU84VR\Downloads\AIS Project1\Test Trajectories for AIS 20240831> python single_random_generator_parsed.py  --input_dir "C:\Users\HU84VR\Downloads\AIS Project1\Test Trajectories for AIS 20240831\25 chosen perfect trajectory data" --output_data_dir "C:\Users\HU84VR\Downloads\AIS Project1\Test Trajectories for AIS 20240831\data_single"  --output_plots_dir "C:\Users\HU84VR\Downloads\AIS Project1\Test Trajectories for AIS 20240831\plots\plots_single"
+Minimum gap threshold set to: 50493.738453893864
+Input directory: C:\Users\HU84VR\Downloads\AIS Project1\Test Trajectories for AIS 20240831\25 chosen perfect trajectory data
+Output data directory: C:\Users\HU84VR\Downloads\AIS Project1\Test Trajectories for AIS 20240831\data_single
+Output plots directory: C:\Users\HU84VR\Downloads\AIS Project1\Test Trajectories for AIS 20240831\plots\plots_single
+Processing file: AIS data of MMSI 209114000 Class A.csv
+Successfully processed: AIS data of MMSI 209114000 Class A.csv
+Processing file: AIS data of MMSI 209239000 Class A.csv
+Successfully processed: AIS data of MMSI 209239000 Class A.csv
+Processing file: AIS data of MMSI 209671000 Class A.csv
+Successfully processed: AIS data of MMSI 209671000 Class A.csv
+Processing file: AIS data of MMSI 210071000 Class A.csv
+Successfully processed: AIS data of MMSI 210071000 Class A.csv
+Processing file: AIS data of MMSI 211245130 Class A.csv
+Adjusting minimum gap threshold to 25.24686922694693 km for AIS data of MMSI 211245130 Class A.csv
+Adjusting minimum gap threshold to 12.623434613473465 km for AIS data of MMSI 211245130 Class A.csv
+Successfully processed: AIS data of MMSI 211245130 Class A.csv
+Processing file: AIS data of MMSI 211284350 Class A.csv
+Successfully processed: AIS data of MMSI 211284350 Class A.csv
+Processing file: AIS data of MMSI 212613000 Class A.csv
+Successfully processed: AIS data of MMSI 212613000 Class A.csv
+Processing file: AIS data of MMSI 215685000 Class A.csv
+Successfully processed: AIS data of MMSI 215685000 Class A.csv
+Processing file: AIS data of MMSI 219000551 Class A.csv
+Successfully processed: AIS data of MMSI 219000551 Class A.csv
+Processing file: AIS data of MMSI 219001284 Class A.csv
+Successfully processed: AIS data of MMSI 219001284 Class A.csv
+Processing file: AIS data of MMSI 219001619 Class A.csv
+Successfully processed: AIS data of MMSI 219001619 Class A.csv
+Processing file: AIS data of MMSI 219002493 Class A.csv
+Successfully processed: AIS data of MMSI 219002493 Class A.csv
+Processing file: AIS data of MMSI 244140321 Class A.csv
+Successfully processed: AIS data of MMSI 244140321 Class A.csv
+Processing file: AIS data of MMSI 244928000 Class A.csv
+Successfully processed: AIS data of MMSI 244928000 Class A.csv
+Processing file: AIS data of MMSI 249605000 Class A.csv
+Successfully processed: AIS data of MMSI 249605000 Class A.csv
+Processing file: AIS data of MMSI 255802950 Class A.csv
+Successfully processed: AIS data of MMSI 255802950 Class A.csv
+Processing file: AIS data of MMSI 255806352 Class A.csv
+Successfully processed: AIS data of MMSI 255806352 Class A.csv
+Processing file: AIS data of MMSI 257207000 Class A.csv
+Successfully processed: AIS data of MMSI 257207000 Class A.csv
+Processing file: AIS data of MMSI 257975000 Class A.csv
+Successfully processed: AIS data of MMSI 257975000 Class A.csv
+Processing file: AIS data of MMSI 265022000 Class A.csv
+Successfully processed: AIS data of MMSI 265022000 Class A.csv
+Processing file: AIS data of MMSI 266466000 Class A.csv
+Successfully processed: AIS data of MMSI 266466000 Class A.csv
+Processing file: AIS data of MMSI 311000340 Class A.csv
+Successfully processed: AIS data of MMSI 311000340 Class A.csv
+Processing file: AIS data of MMSI 311995000 Class A.csv
+Successfully processed: AIS data of MMSI 311995000 Class A.csv
+Processing file: AIS data of MMSI 341852000 Class A.csv
+Successfully processed: AIS data of MMSI 341852000 Class A.csv
+Processing file: AIS data of MMSI 538005498 Class A.csv
+Successfully processed: AIS data of MMSI 538005498 Class A.csv
+PS C:\Users\HU84VR\Downloads\AIS Project1\Test Trajectories for AIS 20240831> python multiple_random_generator_parsed.py  --input_dir "C:\Users\HU84VR\Downloads\AIS Project1\Test Trajectories for AIS 20240831\25 chosen perfect trajectory data" --output_data_dir "C:\Users\HU84VR\Downloads\AIS Project1\Test Trajectories for AIS 20240831\data_multiple"  --output_plots_dir "C:\Users\HU84VR\Downloads\AIS Project1\Test Trajectories for AIS 20240831\plots\plots_multiple"
+Number of gaps: 10
+Minimum gap threshold set to: 86000.0
+Input directory: C:\Users\HU84VR\Downloads\AIS Project1\Test Trajectories for AIS 20240831\25 chosen perfect trajectory data
+Output data directory: C:\Users\HU84VR\Downloads\AIS Project1\Test Trajectories for AIS 20240831\data_multiple
+Output plots directory: C:\Users\HU84VR\Downloads\AIS Project1\Test Trajectories for AIS 20240831\plots\plots_multiple
+Processing file: AIS data of MMSI 209114000 Class A.csv
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Successfully processed: AIS data of MMSI 209114000 Class A.csv
+Processing file: AIS data of MMSI 209239000 Class A.csv
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Successfully processed: AIS data of MMSI 209239000 Class A.csv
+Processing file: AIS data of MMSI 209671000 Class A.csv
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Successfully processed: AIS data of MMSI 209671000 Class A.csv
+Processing file: AIS data of MMSI 210071000 Class A.csv
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Successfully processed: AIS data of MMSI 210071000 Class A.csv
+Processing file: AIS data of MMSI 211245130 Class A.csv
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 10750.0 to 5375.0
+Updating current_gap_threshold from 5375.0 to 2687.5
+Updating current_gap_threshold from 2687.5 to 1343.75
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 10750.0 to 5375.0
+Updating current_gap_threshold from 5375.0 to 2687.5
+Updating current_gap_threshold from 2687.5 to 1343.75
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 10750.0 to 5375.0
+Updating current_gap_threshold from 5375.0 to 2687.5
+Updating current_gap_threshold from 2687.5 to 1343.75
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 10750.0 to 5375.0
+Updating current_gap_threshold from 5375.0 to 2687.5
+Updating current_gap_threshold from 2687.5 to 1343.75
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 10750.0 to 5375.0
+Updating current_gap_threshold from 5375.0 to 2687.5
+Updating current_gap_threshold from 2687.5 to 1343.75
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 10750.0 to 5375.0
+Updating current_gap_threshold from 5375.0 to 2687.5
+Updating current_gap_threshold from 2687.5 to 1343.75
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 10750.0 to 5375.0
+Updating current_gap_threshold from 5375.0 to 2687.5
+Updating current_gap_threshold from 2687.5 to 1343.75
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 10750.0 to 5375.0
+Updating current_gap_threshold from 5375.0 to 2687.5
+Updating current_gap_threshold from 2687.5 to 1343.75
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 10750.0 to 5375.0
+Updating current_gap_threshold from 5375.0 to 2687.5
+Updating current_gap_threshold from 2687.5 to 1343.75
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 10750.0 to 5375.0
+Updating current_gap_threshold from 5375.0 to 2687.5
+Updating current_gap_threshold from 2687.5 to 1343.75
+Successfully processed: AIS data of MMSI 211245130 Class A.csv
+Processing file: AIS data of MMSI 211284350 Class A.csv
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Successfully processed: AIS data of MMSI 211284350 Class A.csv
+Processing file: AIS data of MMSI 212613000 Class A.csv
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Successfully processed: AIS data of MMSI 212613000 Class A.csv
+Processing file: AIS data of MMSI 215685000 Class A.csv
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Successfully processed: AIS data of MMSI 215685000 Class A.csv
+Processing file: AIS data of MMSI 219000551 Class A.csv
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Successfully processed: AIS data of MMSI 219000551 Class A.csv
+Processing file: AIS data of MMSI 219001284 Class A.csv
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Successfully processed: AIS data of MMSI 219001284 Class A.csv
+Processing file: AIS data of MMSI 219001619 Class A.csv
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Successfully processed: AIS data of MMSI 219001619 Class A.csv
+Processing file: AIS data of MMSI 219002493 Class A.csv
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Successfully processed: AIS data of MMSI 219002493 Class A.csv
+Processing file: AIS data of MMSI 244140321 Class A.csv
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Successfully processed: AIS data of MMSI 244140321 Class A.csv
+Processing file: AIS data of MMSI 244928000 Class A.csv
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Successfully processed: AIS data of MMSI 244928000 Class A.csv
+Processing file: AIS data of MMSI 249605000 Class A.csv
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Successfully processed: AIS data of MMSI 249605000 Class A.csv
+Processing file: AIS data of MMSI 255802950 Class A.csv
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Successfully processed: AIS data of MMSI 255802950 Class A.csv
+Processing file: AIS data of MMSI 255806352 Class A.csv
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Successfully processed: AIS data of MMSI 255806352 Class A.csv
+Processing file: AIS data of MMSI 257207000 Class A.csv
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Successfully processed: AIS data of MMSI 257207000 Class A.csv
+Processing file: AIS data of MMSI 257975000 Class A.csv
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Successfully processed: AIS data of MMSI 257975000 Class A.csv
+Processing file: AIS data of MMSI 265022000 Class A.csv
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Successfully processed: AIS data of MMSI 265022000 Class A.csv
+Processing file: AIS data of MMSI 266466000 Class A.csv
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Successfully processed: AIS data of MMSI 266466000 Class A.csv
+Processing file: AIS data of MMSI 311000340 Class A.csv
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Successfully processed: AIS data of MMSI 311000340 Class A.csv
+Processing file: AIS data of MMSI 311995000 Class A.csv
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Successfully processed: AIS data of MMSI 311995000 Class A.csv
+Processing file: AIS data of MMSI 341852000 Class A.csv
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 43000.0 to 21500.0
+Updating current_gap_threshold from 21500.0 to 10750.0
+Successfully processed: AIS data of MMSI 341852000 Class A.csv
+Processing file: AIS data of MMSI 538005498 Class A.csv
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Updating current_gap_threshold from 86000.0 to 43000.0
+Successfully processed: AIS data of MMSI 538005498 Class A.csv
+PS C:\Users\HU84VR\Downloads\AIS Project1\Test Trajectories for AIS 20240831> python combined_random_generator_parsed.py  --input_dir "C:\Users\HU84VR\Downloads\AIS Project1\Test Trajectories for AIS 20240831\25 chosen perfect trajectory data" --output_data_dir "C:\Users\HU84VR\Downloads\AIS Project1\Test Trajectories for AIS 20240831\data_realistic_frequency"  --output_plots_dir "C:\Users\HU84VR\Downloads\AIS Project1\Test Trajectories for AIS 20240831\plots\plots_realistic_frequency"
+Number of large gaps: 3
+Number of small gaps: 14
+Large gap threshold set to: 162436.92842015193
+Small gap threshold set to: 14294.919611913792
+Input directory: C:\Users\HU84VR\Downloads\AIS Project1\Test Trajectories for AIS 20240831\25 chosen perfect trajectory data
+Output data directory: C:\Users\HU84VR\Downloads\AIS Project1\Test Trajectories for AIS 20240831\data_realistic_frequency
+Output plots directory: C:\Users\HU84VR\Downloads\AIS Project1\Test Trajectories for AIS 20240831\plots\plots_realistic_frequency
+Processing file: AIS data of MMSI 209114000 Class A.csv
+Successfully processed: AIS data of MMSI 209114000 Class A.csv
+Processing file: AIS data of MMSI 209239000 Class A.csv
+Successfully processed: AIS data of MMSI 209239000 Class A.csv
+Processing file: AIS data of MMSI 209671000 Class A.csv
+Successfully processed: AIS data of MMSI 209671000 Class A.csv
+Processing file: AIS data of MMSI 210071000 Class A.csv
+Successfully processed: AIS data of MMSI 210071000 Class A.csv
+Processing file: AIS data of MMSI 211245130 Class A.csv
+Successfully processed: AIS data of MMSI 211245130 Class A.csv
+Processing file: AIS data of MMSI 211284350 Class A.csv
+Successfully processed: AIS data of MMSI 211284350 Class A.csv
+Processing file: AIS data of MMSI 212613000 Class A.csv
+Successfully processed: AIS data of MMSI 212613000 Class A.csv
+Processing file: AIS data of MMSI 215685000 Class A.csv
+Successfully processed: AIS data of MMSI 215685000 Class A.csv
+Processing file: AIS data of MMSI 219000551 Class A.csv
+Successfully processed: AIS data of MMSI 219000551 Class A.csv
+Processing file: AIS data of MMSI 219001284 Class A.csv
+Successfully processed: AIS data of MMSI 219001284 Class A.csv
+Processing file: AIS data of MMSI 219001619 Class A.csv
+Successfully processed: AIS data of MMSI 219001619 Class A.csv
+Processing file: AIS data of MMSI 219002493 Class A.csv
+Successfully processed: AIS data of MMSI 219002493 Class A.csv
+Processing file: AIS data of MMSI 244140321 Class A.csv
+Successfully processed: AIS data of MMSI 244140321 Class A.csv
+Processing file: AIS data of MMSI 244928000 Class A.csv
+Successfully processed: AIS data of MMSI 244928000 Class A.csv
+Processing file: AIS data of MMSI 249605000 Class A.csv
+Successfully processed: AIS data of MMSI 249605000 Class A.csv
+Processing file: AIS data of MMSI 255802950 Class A.csv
+Successfully processed: AIS data of MMSI 255802950 Class A.csv
+Processing file: AIS data of MMSI 255806352 Class A.csv
+Successfully processed: AIS data of MMSI 255806352 Class A.csv
+Processing file: AIS data of MMSI 257207000 Class A.csv
+Successfully processed: AIS data of MMSI 257207000 Class A.csv
+Processing file: AIS data of MMSI 257975000 Class A.csv
+Successfully processed: AIS data of MMSI 257975000 Class A.csv
+Processing file: AIS data of MMSI 265022000 Class A.csv
+Successfully processed: AIS data of MMSI 265022000 Class A.csv
+Processing file: AIS data of MMSI 266466000 Class A.csv
+Successfully processed: AIS data of MMSI 266466000 Class A.csv
+Processing file: AIS data of MMSI 311000340 Class A.csv
+Successfully processed: AIS data of MMSI 311000340 Class A.csv
+Processing file: AIS data of MMSI 311995000 Class A.csv
+Successfully processed: AIS data of MMSI 311995000 Class A.csv
+Processing file: AIS data of MMSI 341852000 Class A.csv
+Successfully processed: AIS data of MMSI 341852000 Class A.csv
+Processing file: AIS data of MMSI 538005498 Class A.csv
+Successfully processed: AIS data of MMSI 538005498 Class A.csv
+PS C:\Users\HU84VR\Downloads\AIS Project1\Test Trajectories for AIS 20240831>
