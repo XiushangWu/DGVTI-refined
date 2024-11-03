@@ -27,4 +27,6 @@ The **combined_random_generator_parsed.py** script generates missing gaps based 
 
 The next step is to extract all CSV files containing "perfect" trajectories, meaning those without missing values in the attributes "longitude," "latitude," and "draught." It’s important to emphasize that having no missing values for "longitude" and "latitude" alone does not guarantee a perfect trajectory without positional gaps. Missing data gaps can still occur due to prolonged AIS communication failures. Additionally, it's crucial to ensure that the extracted CSV files have no missing values for "draught." This is because, during the sea depth grid construction in the data preparation stage, missing sea depth grid cells are filled with the maximum draught values from neighboring vessel samples around the centroid of the grid cell. This ensures the depth map remains complete and consistent for the subsequent graph construction stage.
 
+In order to make the model performance test valid. The script "**MMSI_ship_type_classification.py**" is used to extract all the trajectories from the data downloaded from the https://web.ais.dk/aisdata/. And the extracted trajectory data are classified into different categories based on the attribute "Ship type".
+
 
