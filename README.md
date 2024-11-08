@@ -29,4 +29,8 @@ The next step is to extract all CSV files containing "perfect" trajectories, mea
 
 In order to make the model performance test valid. The script "**MMSI_ship_type_classification.py**" is used to extract all the trajectories from the data downloaded from the https://web.ais.dk/aisdata/. And the extracted trajectory data are classified into different categories based on the attribute "Ship type".
 
+In addition, inorder to show the original trajectory on the QGIS, where we can compare the original trajectory, trajectory with manually created missing gaps and the imputed trajectory from DGVTI, the script **Trajectory_csv_to_GeoJson.py** is created and uploaded. The users can use it to convert the extracted csv trajectory for each MMSI into a GeoJson format. 
+
+And the script **csv_trajectories_selection_for_DGVTI.py** is uploaded in order to  include only trajectories that overlap the 3 by 3 Skagen imputation graph, where we can check the performance of the 3 by 3 Skagen graph imputation on the trajectories that traverse the 3 by 3 graph.
+
 
